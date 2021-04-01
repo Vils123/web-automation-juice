@@ -121,7 +121,7 @@ Feature: Juice Shop Actions
     | Email        | Password        |
     | RANDOM_EMAIL | SeriousHeadAche |
   Then I am on the "Home" page
-@run
+
   Scenario: Add new address
     When I "log in" with the following data:
       | Email | Password |
@@ -142,7 +142,7 @@ Feature: Juice Shop Actions
     Then I see "address" with the following data:
       | Name    | Address               | Country |
       | Karlson | Random Address 25-395 | Sweden  |
-
+@run
   Scenario: Order an item
     When I "log in" with the following data:
       | Email | Password |
